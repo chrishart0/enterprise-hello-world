@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "enterprise-hello-world"
+version = "0.1.0"
+description = ""
+authors = ["chrishart0 <64378248+chrishart0@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "enterprise_hello_world" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "1.0.1"
+pydantic-settings = "^2.5.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.3.3"
+pytest-cov = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
